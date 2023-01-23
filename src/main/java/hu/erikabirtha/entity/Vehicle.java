@@ -15,6 +15,10 @@ public class Vehicle {
         this.vehicleType = vehicleType;
     }
 
+    public Vehicle(){
+
+    }
+
     public String getRegistrationNumber() {
         return registrationNumber;
     }

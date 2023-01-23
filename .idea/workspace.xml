@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b9c8da2-5b4a-4a22-87ab-80fa84a153e6" name="Changes" comment="set api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/exeption/InvalidRegisterNumberExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/parser/InvalidJsonExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/parser/JsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/parser/VehicleParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/validation/VehicleValidator.java" afterDir="false" />
+    <list default="true" id="0b9c8da2-5b4a-4a22-87ab-80fa84a153e6" name="Changes" comment="validation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/parser/ParserResponseModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/VehiclePersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/VehiclePersistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/VehicleRegisterAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/VehicleRegisterAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/VehicleRegisterInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/VehicleRegisterInteractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/dto/VehicleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/dto/VehicleDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/entity/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/entity/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/parser/VehicleParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/erikabirtha/parser/VehicleParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,22 +51,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_directory_selection&quot;: &quot;M:/Documents/00_fejlesztes/bootcamp/Bootcamp_20230120/VehicleRegisterCore/src/main/java/hu/erikabirtha&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "M:/Documents/00_fejlesztes/bootcamp/Bootcamp_20230120/VehicleRegisterCore/src/main/java/hu/erikabirtha",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hu.erikabirtha.entity" />
@@ -94,7 +89,8 @@
       <updated>1674210976049</updated>
       <workItem from="1674210977380" duration="16259000" />
       <workItem from="1674316340072" duration="17578000" />
-      <workItem from="1674414308440" duration="5852000" />
+      <workItem from="1674414308440" duration="6369000" />
+      <workItem from="1674456691797" duration="19613000" />
     </task>
     <task id="LOCAL-00001" summary="set api">
       <created>1674233583075</created>
@@ -103,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674233583075</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="validation">
+      <created>1674422076079</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674422076079</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="set api" />
-    <option name="LAST_COMMIT_MESSAGE" value="set api" />
+    <MESSAGE value="validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="validation" />
   </component>
 </project>
