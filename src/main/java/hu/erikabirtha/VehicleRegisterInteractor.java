@@ -9,6 +9,7 @@ import hu.erikabirtha.validation.VehicleValidator;
 public class VehicleRegisterInteractor implements VehicleRegisterAPI {
     private VehiclePersistence vehiclePersistence;
     private Display presenter;
+
     VehicleValidator vehicleValidator = new VehicleValidator();
 
 
@@ -28,14 +29,15 @@ public class VehicleRegisterInteractor implements VehicleRegisterAPI {
 
     }
 
-    public void getVehicleByRegisterNumber(String registerNumberJson) {
+    @Override
+    public void findByRegistrationNumber(String jsonObject) {
         VehicleParser vehicleParser = new VehicleParser();
-        vehicleValidator.validate(registerNumberJson);
-        String registrationNumber = vehicleParser.parseRegistrationNumberJson(registerNumberJson);
+        vehicleValidator.validate(jsonObject);
+        String registrationNumber = vehicleParser.parseRegistrationNumberJson(jsonObject);
         Vehicle vehicle = vehiclePersistence.findVehicleByRegistrationNumber(registrationNumber);
         ParserResponseModel parserResponseModel = new ParserResponseModel();
         String response = parserResponseModel.parseVehicleDataToJson(vehicle);
         presenter.displayVehicle(response);
-
     }
+
 }
